@@ -1,4 +1,4 @@
-package com.demo.restservice;
+package com.demo.restservice.events;
 
 import com.google.common.eventbus.EventBus;
 import org.springframework.stereotype.Component;

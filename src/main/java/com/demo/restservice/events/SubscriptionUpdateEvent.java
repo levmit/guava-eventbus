@@ -1,4 +1,4 @@
-package com.demo.restservice;
+package com.demo.restservice.events;
 
 public class SubscriptionUpdateEvent {
 
