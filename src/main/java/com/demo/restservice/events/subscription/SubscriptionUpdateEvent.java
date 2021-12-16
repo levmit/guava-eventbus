@@ -9,6 +9,6 @@ public class SubscriptionUpdateEvent {
     }
 
     public void execute(){
-        System.out.println(this.getClass().getName() +subscriptionId);
+        System.out.println(this.getClass().getName() +": " +subscriptionId);
     }
 }
