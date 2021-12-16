@@ -1,10 +1,10 @@
-package com.demo.restservice.events;
+package com.demo.restservice.events.subscription;
 
-public class SubscriptionCreateEvent {
+public class SubscriptionUpdateEvent {
 
     private String subscriptionId;
 
-    public SubscriptionCreateEvent(String subscriptionId) {
+    public SubscriptionUpdateEvent(String subscriptionId) {
         this.subscriptionId = subscriptionId;
     }
 

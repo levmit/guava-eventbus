@@ -1,4 +1,4 @@
-package com.demo.restservice.events;
+package com.demo.restservice.events.subscription;
 
 import com.google.common.eventbus.Subscribe;
 

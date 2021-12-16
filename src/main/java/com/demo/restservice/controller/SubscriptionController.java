@@ -1,8 +1,8 @@
 package com.demo.restservice.controller;
 
 import com.demo.restservice.events.AppEventBus;
-import com.demo.restservice.events.SubscriptionCreateEvent;
-import com.demo.restservice.events.SubscriptionUpdateEvent;
+import com.demo.restservice.events.subscription.SubscriptionCreateEvent;
+import com.demo.restservice.events.subscription.SubscriptionUpdateEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
