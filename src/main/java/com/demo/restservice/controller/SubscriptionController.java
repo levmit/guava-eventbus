@@ -1,8 +1,9 @@
 package com.demo.restservice.controller;
 
-import com.demo.restservice.events.AppEventBus;
+import com.demo.restservice.events.EventBusFactory;
 import com.demo.restservice.events.subscription.SubscriptionCreateEvent;
 import com.demo.restservice.events.subscription.SubscriptionUpdateEvent;
+import com.google.common.eventbus.EventBus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,8 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class SubscriptionController {
 
-    @Autowired
-    AppEventBus eventBus;
+    EventBus eventBus = EventBusFactory.getEventBus();
 
     @PutMapping("/subscription/{id}")
     public void update(@PathVariable(value = "id") String id) {
